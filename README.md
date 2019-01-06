@@ -1,6 +1,6 @@
 # xjdash
 
-3d printer model of the Jeep XJ dash gauge box for an 89 XJ, should work for most models around that year.
+3d printer model of the Jeep XJ dash gauge box for an 89 XJ, should work for most models around that year. Built in openSCAD http://www.openscad.org/
 
 ![screenshot](https://raw.githubusercontent.com/smmccabe/xjdash/master/screenshot.png)
 
