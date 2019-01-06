@@ -464,9 +464,11 @@ translate([-2,200,60]) {
             cylinder(h=6, r=2.2);
         translate([314, 112, -1])
             cylinder(h=6, r=1.5);
+        // Top notch left
         translate([74,109,-1])
             cube([31,10,5]);
-        translate([244,109,-1])
+        // Top notch right
+        translate([241,109,-1])
             cube([31,10,5]);
         translate([74, 90, -1])
             rotate([0, 0, 90])
@@ -507,8 +509,10 @@ translate([-2,200,60]) {
                 cylinder(h=5, r=1.5);
             translate([272, 2, -1])
                 cylinder(h=5, r=1.5);
-            translate([39, -5, -1])
+            // Bottom notch left
+            translate([35, -5, -1])
                 cube([20, 10, 4]);
+            // Bottom notch right
             translate([302, -5, -1])
                 cube([20, 10, 4]);
         }
