@@ -80,14 +80,6 @@ module botmount() {
     rotate(a=10, v=[1,0,0]) {
         cube([18,3,14]);
     }
-    /*difference() {
-        translate([0,-9,-8])
-            rotate([25,0,0]) 
-                cube([2,16,18]);
-        translate([-1,-25,-12])
-            rotate([-20, 0, 0])
-                cube([20,25,20]);
-    }*/
 }
 
 module support() {
@@ -268,7 +260,29 @@ difference() {
             difference() {
                 cylinder(h=60, r=11.5);
                 cylinder(h=101, r=9.5);
-            }    
+            }
+        // Ribs    
+        translate([35,0,0,])
+            cube([5, 110, 5]);
+        translate([85,0,0,])
+            cube([5, 110, 5]);
+        translate([125,0,0,])
+            cube([5, 110, 5]);
+        translate([125,0,0,])
+            cube([5, 110, 5]);  
+        translate([182,0,0,])
+            cube([5, 110, 5]);  
+        translate([245,0,0,])
+            cube([5, 110, 5]);
+        translate([305,0,0,])
+            cube([5, 110, 5]);
+        // Supports
+        translate([65,105,0])
+            cube([5, 5, 60]);
+        translate([167,105,0])
+            cube([5, 5, 60]);
+        translate([270,105,0])
+            cube([5, 5, 60]);    
     }
     translate([137, 20, 11]) {
         plug();
@@ -327,12 +341,6 @@ difference() {
     // Speedo Notch
     translate([225,52,-1])
         cylinder(h=5, r=12.5);
-    // EV Gauge Notch
-    translate([320, 90, -1])
-        cylinder(h=5, r=10);
-    // Amp Gauge Notch
-    translate([320, 20, -1])
-        cylinder(h=5, r=10);
 }
 
 translate([29, 112, 56]) {
@@ -382,12 +390,12 @@ translate([270,-8,66]) {
 translate([73, 112, 60]) {
     topmount(2.5, 2);
 }
-translate([243, 112, 60]) {
+translate([240, 112, 60]) {
     topmount(2, 2.5);
 }
 
 //Bottom Mounts
-translate([38,-9,83]) {
+translate([34,-9,83]) {
     botmount();
 }
 translate([301,-9,83]) {
